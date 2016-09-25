@@ -1,7 +1,10 @@
 {
   "name": "heyiamhere",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "grunt": "0.4.5",
+    "grunt-cli": "1.2.0"
+  },
   "repository": {},
   "devDependencies": {
     "grunt": "^0.4.5",
@@ -35,6 +38,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "start": "node app/scripts/controllers/main.js"
   }
 }
