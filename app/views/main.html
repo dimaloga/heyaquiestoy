@@ -11,17 +11,17 @@
   </div>
       <div map-lazy-load="https://maps.google.com/maps/api/js" map-lazy-load-params="{{googleMapsUrl}}" >
           <ng-map center="100,-1500" zoom="13" on-click="logLatLng()">
-          <marker position="{{wayPointOrigin}}"
+            <shape id="circle" name="circle" centered="true"
+                   stroke-color='#FF0000' stroke-opacity="0.8"stroke-weight="2"
+                   center="current-position" radius="800" editable="true" ></shape>
+            <marker position="{{wayPointOrigin}}"
             title="You are here"
-            animation="Animation.BOUNCE"
             centered="true"></marker>
             <marker position="{{wayPointDestination}}"
             title="El esta alla"
-            animation="Animation.BOUNCE"
             centered="true"></marker>
             <marker position="{{wayPointDestinationLast}}"
             title="El esta alla"
-            animation="Animation.BOUNCE"
             centered="true"></marker>
           </directions>
           </ng-map>
