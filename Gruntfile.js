@@ -442,9 +442,5 @@ module.exports = function (grunt) {
     'build'
   ]);
 
-  "scripts": {
-    "postinstall": "grunt",
-    "start": "node app/scripts/controllers/main.js"
-  }
 
 };
