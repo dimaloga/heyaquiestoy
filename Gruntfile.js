@@ -441,4 +441,10 @@ module.exports = function (grunt) {
     'test',
     'build'
   ]);
+
+  "scripts": {
+    "postinstall": "grunt",
+    "start": "node app/scripts/controllers/main.js"
+  }
+
 };
