@@ -20,11 +20,11 @@ angular.module('heyIamHereApp').controller('MainCtrl', function ($scope, $rootSc
     };
     
     $rootScope.wayPointOrigin = [
-          44.32384807250689, -78.079833984375
+          6.263583, -75.567667
     ];
 
     $rootScope.wayPointDestination = [
-          44.55916341529184, -76.17919921875
+          6.293583, -75.567667
     ];
 
     $scope.posts={};
