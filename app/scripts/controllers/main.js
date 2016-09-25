@@ -22,11 +22,23 @@ angular.module('heyIamHereApp').controller('MainCtrl', function ($scope, $rootSc
     $rootScope.wayPointOrigin = [
           6.263583, -75.567667
     ];
-
     $rootScope.wayPointDestination = [
-          6.293583, -75.567667
+          6.283583, -75.567667
     ];
 
+    $rootScope.wayPointDestinationLast = [
+      6.293583,-75.567667
+    ];
+   var points = [{latitud: 6.263583, longitud: -75.567667}, {latitude:  6.293583, longitude: -75.567667},  {latitude:  6.213583, longitude: -75.567667}]
+
+ 
+  // for (var i = 0; i< points.length;i++){
+  //   $rootScope.wayPointOrigin = [
+  //     points[i].latitud, points[i].longitud
+  //   ];
+  // }
+
+  
     $scope.posts={};
 
     /*$scope.getAllPosts = function(){
